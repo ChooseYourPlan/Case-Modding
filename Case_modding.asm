@@ -11,40 +11,46 @@
 			out DDRC, r16
 			out DDRD, r17
 
+			ldi r25, 0b00000010 
+			out TCCR0B,r25 ;Interner Timer Tabelle bei 15.9			
+
 ; Hauptprogramm
 START:		
-			;ldi r25, 27			
-			;call LFSR
-
-			ldi r16, 0b00010000
+			ldi r16, 0b00000000
 			out PORTC, r17
 				
-			;in r16, PIND
+			in r16, PIND
 
-			cpi r16,0b00100000
+			cpi r16,0b10000000
 			breq anhaltendes_lauflicht
 			
-			cpi r16,0b10000000
+			cpi r16,0b01000000
 			breq alle_leds
 
 			
-			cpi r16,0b01000000
+			cpi r16,0b00100000
 			breq lauflicht
 						
 			cpi r16,0b00010000
-			breq random		
+			breq random_leds	
 			
 			rjmp START
 
 
-random:	
-		ldi r25,0x02 ;LOAD THIS REGISTER
-		out TCCR0B,r25 ;SET PRESCALLER AND INTERNAL CLOCK
-		
-		ldi r24, 0b10000000
-		in r24, TCNT0
+random_leds:
+		ldi r25, 0b00000000	
+		random_leds_loop:
 
-		rjmp START
+		in r24, TCNT0  ;15.2.2 Datenblatt 15.5
+		
+		out PORTC, r24
+		call WAIT		
+		
+		inc r25
+		cpi r25, 0b00001111
+		breq START
+		
+		rjmp random_leds_loop 
 
 
 anhaltendes_lauflicht:
@@ -112,6 +118,11 @@ Wait:
 
 		rjmp Wait_loop2
 
+
+/*
+The 8-bit comparator continuously compares TCNT0 with the Output Compare Registers (OCR0A and
+OCR0B). Whenever TCNT0 equals OCR0A or OCR0B, the comparator signals a match.
+*/
 
 /*
 
