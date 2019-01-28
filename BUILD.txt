@@ -1,0 +1,4 @@
+C:\Program Files (x86)\Arduino\hardware\tools\avr\bin>avrdude.exe -C "C:\Program
+ Files (x86)\Arduino\hardware\tools\avr\etc\avrdude.conf" -p atmega328p -c ardui
+no -P COM3 -b 115200 -U flash:w:"C:\Users\Tim\Documents\Case_modding\Case_moddin
+g.hex":i
