@@ -1,0 +1,20 @@
+Arten von UML-Diagrammen
+UML verwendet Elemente und verknüpft diese auf unterschiedliche Art und Weise miteinander, um verschiedene Arten von Diagrammen zu erstellen: zum einen Diagramme, die statische oder strukturelle Aspekte eines Systems darstellen, zum anderen verhaltensbasierte Diagramme, die die dynamischen Aspekte eines Systems erfassen.
+
+Strukturelle UML-Diagramme
+
+Klassendiagramm Das am häufigsten verwendete UML-Diagramm und die wichtigste Grundlage für jede objektorientierte Lösung. Klassen in einem System, Attribute und Vorgänge sowie die Beziehung zwischen den einzelnen Klassen. Klassen werden gruppiert, um Klassendiagramme zu erstellen, wenn große Systeme als Diagramm dargestellt werden sollen.
+Komponentendiagramm Stellt die strukturelle Beziehung von Softwaresystemelementen dar. Wird am häufigsten für komplexe Systeme mit mehreren Komponenten eingesetzt. Komponenten kommunizieren über Schnittstellen.
+Kompositionsstrukturdiagramm Kompositionsstrukturdiagramme werden verwendet, um die interne Struktur einer Klasse darzustellen.
+Implementierungsdiagramm Illustriert die Systemhardware und die zugehörige Software. Nützlich, wenn eine Softwarelösung auf mehreren Maschinen mit individuellen Konfigurationen implementiert wird.
+Objektdiagramm Zeigt die Beziehung zwischen Objekten unter Verwendung von Beispielen aus der Realität. Hierbei wird illustriert, wie ein System zu einem bestimmten Zeitpunkt aussieht. Da Daten in Objekten zur Verfügung stehen, können diese ebenfalls dafür verwendet werden, um Beziehungen zwischen Objekten zu verdeutlichen.
+Paketdiagramm Es gibt zwei spezielle Arten von Abhängigkeiten, die zwischen Paketen definiert werden: Paketimporte und Paketverschmelzungen. Pakete können die unterschiedlichen Ebenen eines Systems darstellen, um die Architektur zu visualisieren. Paketabhängigkeiten können so dargestellt werden, dass die Kommunikationsmechanismen zwischen verschiedenen Schichten erkennbar sind.
+Verhaltensbasierte UML-Diagramme
+
+Aktivitätsdiagramme Grafisch dargestellte Geschäfts- oder Betriebsabläufe, um die Aktivität eines Teils oder einer Komponente in einem System zu visualisieren. Aktivitätsdiagramme werden alternativ zu Zustandsdiagrammen verwendet.
+Kommunikationsdiagramm Ähnelt dem Sequenzdiagramm, allerdings liegt der Fokus hier auf der Nachricht, die zwischen Objekten weitergegeben wird. Die gleichen Informationen lassen sich mit einem Sequenzdiagramm und unterschiedlichen Objekten darstellen.
+Interaktionsübersichtsdiagramm Es gibt sieben Arten von Interaktionsdiagrammen und dieses Diagramm zeigt die Abfolgesequenz von Aktionen im modellierten System.
+Sequenzdiagramm Zeigt, wie und in welcher Reihenfolge Objekte miteinander interagieren. Solche Diagramme repräsentieren Interaktionen für ein bestimmtes Szenario.
+Zustandsdiagramm Ähnlich wie Aktivitätsdiagramme beschreibt diese Art von Diagramm das Verhalten von Objekten, die in ihrem aktuellen Zustand unterschiedliche Verhaltensweisen an den Tag legen.
+Zeitverlaufsdiagramm Wie bei Sequenzdiagrammen wird hier das Verhalten von Objekten in einem bestimmten Zeitraum dargestellt. Wenn es nur ein einziges Objekt gibt, ist das Diagramm recht simpel. Bei mehr als einem Objekt werden die Interaktionen der Objekte während des festgelegten Zeitraums dargestellt.
+Anwendungsfalldiagramm Stellt eine bestimmte Funktionalität eines Systems dar und wurde entwickelt, um zu illustrieren, wie Funktionen zueinander in Beziehung stehen und welche internen/externen Akteure es gibt.

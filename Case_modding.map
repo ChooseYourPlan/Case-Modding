@@ -1,5 +1,5 @@
 
-AVRASM ver. 2.1.42  C:\Users\Tim\Documents\Case_modding\Case_modding.asm Mon Jan 28 22:59:52 2019
+AVRASM ver. 2.1.41  C:\Users\Tim\Documents\Case_modding\Case_modding.asm Fri Feb 01 23:09:51 2019
 
 
 EQU  SIGNATURE_000 0000001e
@@ -132,8 +132,8 @@ EQU  UBRR8        00000000
 EQU  UBRR9        00000001
 EQU  UBRR10       00000002
 EQU  UBRR11       00000003
-EQU  _UBRR0       00000000
-EQU  _UBRR1       00000001
+EQU  UBRR0        00000000
+EQU  UBRR1        00000001
 EQU  UBRR2        00000002
 EQU  UBRR3        00000003
 EQU  UBRR4        00000004
