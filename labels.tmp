@@ -20,16 +20,19 @@
  </OUTPUT_FILES>
  <LABELS>
   <START><FILE>C:\Users\Tim\Documents\Case_modding\Case_modding.asm</FILE><LINE>18</LINE></START>
-  <anhaltendes_lauflicht><FILE>C:\Users\Tim\Documents\Case_modding\Case_modding.asm</FILE><LINE>56</LINE></anhaltendes_lauflicht>
-  <alle_leds><FILE>C:\Users\Tim\Documents\Case_modding\Case_modding.asm</FILE><LINE>71</LINE></alle_leds>
-  <lauflicht><FILE>C:\Users\Tim\Documents\Case_modding\Case_modding.asm</FILE><LINE>81</LINE></lauflicht>
-  <random_leds><FILE>C:\Users\Tim\Documents\Case_modding\Case_modding.asm</FILE><LINE>40</LINE></random_leds>
-  <random_leds_loop><FILE>C:\Users\Tim\Documents\Case_modding\Case_modding.asm</FILE><LINE>42</LINE></random_leds_loop>
-  <WAIT><FILE>C:\Users\Tim\Documents\Case_modding\Case_modding.asm</FILE><LINE>95</LINE></WAIT>
-  <anhaltendes_lauflicht_loop><FILE>C:\Users\Tim\Documents\Case_modding\Case_modding.asm</FILE><LINE>60</LINE></anhaltendes_lauflicht_loop>
-  <lauflicht_loop><FILE>C:\Users\Tim\Documents\Case_modding\Case_modding.asm</FILE><LINE>85</LINE></lauflicht_loop>
-  <Wait_loop1><FILE>C:\Users\Tim\Documents\Case_modding\Case_modding.asm</FILE><LINE>100</LINE></Wait_loop1>
-  <Wait_loop2><FILE>C:\Users\Tim\Documents\Case_modding\Case_modding.asm</FILE><LINE>107</LINE></Wait_loop2>
-  <Wait_loop3><FILE>C:\Users\Tim\Documents\Case_modding\Case_modding.asm</FILE><LINE>114</LINE></Wait_loop3>
+  <pulsieren><FILE>C:\Users\Tim\Documents\Case_modding\Case_modding.asm</FILE><LINE>45</LINE></pulsieren>
+  <anhaltendes_lauflicht><FILE>C:\Users\Tim\Documents\Case_modding\Case_modding.asm</FILE><LINE>94</LINE></anhaltendes_lauflicht>
+  <alle_leds><FILE>C:\Users\Tim\Documents\Case_modding\Case_modding.asm</FILE><LINE>109</LINE></alle_leds>
+  <lauflicht><FILE>C:\Users\Tim\Documents\Case_modding\Case_modding.asm</FILE><LINE>119</LINE></lauflicht>
+  <random_leds><FILE>C:\Users\Tim\Documents\Case_modding\Case_modding.asm</FILE><LINE>78</LINE></random_leds>
+  <pulsieren_loop><FILE>C:\Users\Tim\Documents\Case_modding\Case_modding.asm</FILE><LINE>55</LINE></pulsieren_loop>
+  <WAIT><FILE>C:\Users\Tim\Documents\Case_modding\Case_modding.asm</FILE><LINE>133</LINE></WAIT>
+  <pulsieren_loop_back><FILE>C:\Users\Tim\Documents\Case_modding\Case_modding.asm</FILE><LINE>66</LINE></pulsieren_loop_back>
+  <random_leds_loop><FILE>C:\Users\Tim\Documents\Case_modding\Case_modding.asm</FILE><LINE>80</LINE></random_leds_loop>
+  <anhaltendes_lauflicht_loop><FILE>C:\Users\Tim\Documents\Case_modding\Case_modding.asm</FILE><LINE>98</LINE></anhaltendes_lauflicht_loop>
+  <lauflicht_loop><FILE>C:\Users\Tim\Documents\Case_modding\Case_modding.asm</FILE><LINE>123</LINE></lauflicht_loop>
+  <Wait_loop1><FILE>C:\Users\Tim\Documents\Case_modding\Case_modding.asm</FILE><LINE>138</LINE></Wait_loop1>
+  <Wait_loop2><FILE>C:\Users\Tim\Documents\Case_modding\Case_modding.asm</FILE><LINE>145</LINE></Wait_loop2>
+  <Wait_loop3><FILE>C:\Users\Tim\Documents\Case_modding\Case_modding.asm</FILE><LINE>152</LINE></Wait_loop3>
  </LABELS>
 </ASSEMBLER_INFO>

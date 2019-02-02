@@ -6,7 +6,7 @@
 
 ; Initialisierungen
 			ldi r16, 0b00111111
-			ldi r17, 0b00000000
+			ldi r17, 0b01000000
 
 			out DDRC, r16
 			out DDRD, r17
@@ -18,6 +18,8 @@
 START:		
 			ldi r16, 0b00000000
 			out PORTC, r17
+
+			rjmp pulsieren
 				
 			in r16, PIND
 
@@ -34,8 +36,43 @@ START:
 			cpi r16,0b00010000
 			breq random_leds	
 			
+			cpi r16,0b00001000
+			breq pulsieren
+
 			rjmp START
 
+
+pulsieren:
+
+		ldi r27, 1<<COM0A1 | 1<<WGM00 | 1<<WGM01
+		out TCCR0A, r27
+
+		ldi r27, 1<<CS01
+		out TCCR0B, r27
+
+		ldi r27, 0b00000000
+
+	pulsieren_loop:
+	
+		out OCR0A, r27
+		call WAIT
+		inc r27
+		add r27,r27
+
+		cpi r27, 0b11111111
+		brne pulsieren_loop
+
+	pulsieren_loop_back:
+
+		out OCR0A, r27
+		call WAIT
+		dec r27
+		subi r27, 20
+
+		cpi r27, 0b00000000
+		brne pulsieren_loop_back
+
+		rjmp START
 
 random_leds:
 		ldi r25, 0b00000000	
@@ -88,9 +125,9 @@ lauflicht:
 			
 			LSL r16
 			cpi r16,0b10000000
-			breq START
+			brne lauflicht_loop	
 
-			rjmp lauflicht_loop	
+			rjmp START	
  
 Wait:
 	ldi r18, 0
@@ -99,7 +136,7 @@ Wait:
 	
 	Wait_loop1:
 		inc r18
-		cpi r18, 0x20
+		cpi r18, 0x05
 		brne Wait_loop2
 		
 		ret
