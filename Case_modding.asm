@@ -46,33 +46,39 @@ pulsieren:
 
 		ldi r27, 1<<COM0A1 | 1<<WGM00 | 1<<WGM01
 		out TCCR0A, r27
-
+		
 		ldi r27, 1<<CS01
 		out TCCR0B, r27
 
 		ldi r27, 0b00000000
+		ldi r26, 0b00000100
 
 	pulsieren_loop:
 	
 		out OCR0A, r27
 		call WAIT
+		
 		inc r27
-		add r27,r27
+		add r27,r26
 
 		cpi r27, 0b11111111
 		brne pulsieren_loop
 
 	pulsieren_loop_back:
 
-		out OCR0A, r27
 		call WAIT
+		
 		dec r27
-		subi r27, 20
-
+		sub r27, r26
+		
+		out OCR0A, r27
+		
 		cpi r27, 0b00000000
 		brne pulsieren_loop_back
 
 		rjmp START
+
+
 
 random_leds:
 		ldi r25, 0b00000000	
