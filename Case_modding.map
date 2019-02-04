@@ -1,5 +1,5 @@
 
-AVRASM ver. 2.1.41  C:\Users\Tim\Documents\Case_modding\Case_modding.asm Sat Feb 02 15:37:57 2019
+AVRASM ver. 2.1.41  C:\Users\Tim\Documents\Case_modding\Case_modding.asm Sat Feb 02 18:09:50 2019
 
 
 EQU  SIGNATURE_000 0000001e
@@ -695,16 +695,16 @@ EQU  SPMRaddr     00000032
 EQU  INT_VECTORS_SIZE 00000034
 CSEG START        00000006
 CSEG pulsieren    00000015
-CSEG anhaltendes_lauflicht 00000033
-CSEG alle_leds    0000003c
-CSEG lauflicht    00000047
-CSEG random_leds  0000002a
+CSEG anhaltendes_lauflicht 00000034
+CSEG alle_leds    0000003d
+CSEG lauflicht    00000048
+CSEG random_leds  0000002b
 CSEG pulsieren_loop 0000001b
-CSEG WAIT         0000004f
+CSEG WAIT         00000050
 CSEG pulsieren_loop_back 00000022
-CSEG random_leds_loop 0000002b
-CSEG anhaltendes_lauflicht_loop 00000034
-CSEG lauflicht_loop 00000048
-CSEG Wait_loop1   00000052
-CSEG Wait_loop2   00000056
-CSEG Wait_loop3   0000005a
+CSEG random_leds_loop 0000002c
+CSEG anhaltendes_lauflicht_loop 00000035
+CSEG lauflicht_loop 00000049
+CSEG Wait_loop1   00000053
+CSEG Wait_loop2   00000057
+CSEG Wait_loop3   0000005b

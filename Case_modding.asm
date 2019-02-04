@@ -50,32 +50,35 @@ pulsieren:
 		ldi r27, 1<<CS01
 		out TCCR0B, r27
 
-		ldi r27, 0b00000000
-		ldi r26, 0b00000100
+		ldi r27, 0b00000001
+		ldi r26, 0b00001000 
 
 	pulsieren_loop:
 	
 		out OCR0A, r27
+		
 		call WAIT
 		
-		inc r27
 		add r27,r26
 
-		cpi r27, 0b11111111
+		cpi r27, 0b00000001 ; Overflow darum 0x01
 		brne pulsieren_loop
+		
+		ldi r27, 0b11111111
 
 	pulsieren_loop_back:
 
 		call WAIT
-		
-		dec r27
-		sub r27, r26
-		
-		out OCR0A, r27
-		
-		cpi r27, 0b00000000
-		brne pulsieren_loop_back
 
+		out OCR0A, r27
+
+		sub r27, r26 
+		
+		cpi r27, 0b11111111 ; Overflow darum 0xFF
+		brne pulsieren_loop_back
+		
+		call WAIT
+		
 		rjmp START
 
 
